@@ -1,0 +1,10 @@
+# 一行一个类名，顺序必须和训练时的一致，索引从 0 开始
+# 这一份是按实验室场景自己标的 8 类，换成自己的模型时整个文件替换掉
+person
+bottle
+cup
+laptop
+keyboard
+mouse
+chair
+cell phone
