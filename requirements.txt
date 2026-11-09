@@ -1,0 +1,13 @@
+# 基础依赖，跑通管道必须有这两个
+numpy>=1.21
+opencv-python>=4.5
+
+# 推理后端二选一，装上哪个就能用哪个
+# onnx：装起来最省事，树莓派 4 上 320 输入大约 8~12 fps
+onnxruntime>=1.13
+# ncnn：需要自己编 python 包，同尺寸比 onnx 快，详见 models/README.md
+# ncnn-python
+
+# 下面这些不在 pip 里装，用系统包：
+#   picamera2       sudo apt install -y python3-picamera2
+#   opencv          sudo apt install -y python3-opencv（省掉上面那个 opencv-python）

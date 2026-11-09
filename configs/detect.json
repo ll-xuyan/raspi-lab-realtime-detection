@@ -1,0 +1,41 @@
+{
+    "paths": {
+        "model": "models/yolov5lite-320.onnx",
+        "classes": "models/classes.txt",
+        "dataset_root": "data",
+        "output_dir": "outputs"
+    },
+    "camera": {
+        "backend": "auto",
+        "source": 0,
+        "width": 640,
+        "height": 480,
+        "fps": 30
+    },
+    "model": {
+        "backend": "auto",
+        "input_size": [320, 320],
+        "conf_threshold": 0.35,
+        "iou_threshold": 0.45,
+        "max_det": 50,
+        "input_name": "images",
+        "output_name": "output",
+        "mock_fake_detections": false
+    },
+    "dataset": {
+        "image_dir": "images",
+        "label_dir": "labels",
+        "image_ext": [".jpg", ".jpeg", ".png"],
+        "shuffle": false
+    },
+    "runtime": {
+        "display": false,
+        "save_video": false,
+        "output_video": "outputs/result.mp4",
+        "max_frames": 0,
+        "draw": true,
+        "warmup_frames": 3,
+        "drop_late_frames": true,
+        "queue_size": 4
+    }
+}

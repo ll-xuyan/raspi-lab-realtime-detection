@@ -1,0 +1,30 @@
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 模型权重不进仓库，按 models/README.md 自己放
+models/*.onnx
+models/*.param
+models/*.bin
+models/*.kmodel
+
+# 数据集不进仓库，目录结构和格式见 data/README.md
+data/images/*
+data/labels/*
+!data/images/.gitkeep
+!data/labels/.gitkeep
+
+# 运行产物
+outputs/*
+!outputs/.gitkeep
+*.log
